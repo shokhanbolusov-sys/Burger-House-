@@ -1,0 +1,137 @@
+@import url(https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold);
+
+@import url(https://db.onlinewebfonts.com/c/b4e5daf5e56a2f78c4ee9ab45d660b93?family=Gilroy+Light);
+
+@import url(https://db.onlinewebfonts.com/c/c9d1110e70e6caaaef00cb2e0e81f245?family=Merriweather+Black);
+
+
+
+:root {
+    --gilroy-semibold: "Gilroy-SemiBold";
+    --gilroy-light: "Gilroy Light";
+    --merriweather-black: "Merriweather Black";
+    --container-width: 1200px;
+    --container-padding: 360px;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a,
+span,
+button,
+label,
+input,
+textarea {
+    display: inline-block;
+}
+
+ol, 
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+
+/* sticky foother */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #191411;
+
+    font-weight: normal;
+    color: #fff;
+}
+
+.body > * {
+    flex-shrink: 0;
+}
+
+.container {
+    width: calc(var(--container-width) + (var(--container-padding) * 2));
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 40px 0;
+    width: 1920px;
+    height: 130px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+
+.header-links > * + * {
+    margin-left: 88px;
+}
+
+.header-row {
+   
+}
+
+.header-links {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--gilroy-semibold);
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 60px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    justify-content: space-between;  /*растягивание между собой*/
+}
+
+.footer-left {
+    width: 156.23px;
+    height: 50px;
+}
+
+.footer-right {
+    font-family: var(--gilroy-semibold);
+    font-weight: 600;
+    color: inherit;
+    font-size: 16px;
+}
+
+/* burgert items */
+
+.main-burger {
+    position: relative;
+}
+
+
+.burger-items {
+    width: 608px;
+    height: 638px;
+}
+
